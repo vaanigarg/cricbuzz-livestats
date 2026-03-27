@@ -1,7 +1,7 @@
 import requests
 import streamlit as st
 
-API_KEY = st.secrets["53a1474161mshd6033a30a7fc5efp1bb199jsn59bfb3a9447f"]
+API_KEY = st.secrets["RAPIDAPI_KEY"]
 API_HOST = "cricbuzz-cricket.p.rapidapi.com"
 
 def get_live_matches():

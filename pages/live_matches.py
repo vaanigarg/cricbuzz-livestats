@@ -10,7 +10,8 @@ cursor = conn.cursor()
 data = get_live_matches()
 
 if data:
-    
+
+    st.subheader("Live Match Data")
     st.json(data)
 
     if "data_inserted" not in st.session_state:
@@ -22,7 +23,6 @@ if data:
 
             conn.commit()
             st.session_state["data_inserted"] = True
-
         except Exception:
             pass
 
